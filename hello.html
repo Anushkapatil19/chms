@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actor Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.profile-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.pronouns {
+    font-size: 14px;
+    color: #777;
+}
+
+.role, .location {
+    font-size: 16px;
+    color: #555;
+}
+
+.header-right {
+    text-align: right;
+}
+
+.header-right p {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+.status {
+    font-size: 14px;
+    color: green;
+    font-weight: bold;
+}
+
+.tabs {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabs button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.attributes, .about, .skills, .honors, .industry-focus {
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.skill-level {
+    float: right;
+    color: #0b76ef;
+}
+
+    </style>
+    </head>
+<body>
+    <div class="profile-container">
+        <header>
+            <div class="header-left">
+                <img src="profile-image.png" alt="Profile Picture" class="profile-pic">
+                <h1>Aishwarya Rai Bachchan <span class="pronouns">(She/Her)</span></h1>
+                <p class="role">Actor | Producer</p>
+                <p class="location">Mumbai, Maharashtra, India</p>
+            </div>
+            <div class="header-right">
+                <p><span class="icon">🎭</span> 10 Years Experience</p>
+                <p><span class="icon">🏆</span> Awardee</p>
+                <p><span class="icon">💵</span> 1000 - 2000 / Day</p>
+                <p class="status active">Active</p>
+            </div>
+        </header>
+
+        <nav class="tabs">
+            <button>Details</button>
+            <button>Media</button>
+            <button>Highlights</button>
+            <button>Contact</button>
+            <button>Feedback & Reviews</button>
+        </nav>
+
+        <section class="main-content">
+            <div class="attributes">
+                <h2>Attributes</h2>
+                <ul>
+                    <li><strong>Height:</strong> 5' 10"</li>
+                    <li><strong>Weight:</strong> 77 kg</li>
+                    <li><strong>Build:</strong> Average</li>
+                    <li><strong>Hair:</strong> Black</li>
+                    <li><strong>Eyes:</strong> Brown</li>
+                    <li><strong>Skin:</strong> Brown</li>
+                </ul>
+            </div>
+
+            <div class="about">
+                <h2>About Me</h2>
+                <p><strong>Age Range: 20 - 40</strong></p>
+                <p>Screenwriter, Director, Editor. A storyteller at heart, motivated to take initiative. I bring with me the experience of a couple of years of screenwriting and directing. Presently, I am stepping into postproduction to hone technical skills and add to my creative palette as a professional.</p>
+            </div>
+
+            <div class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Adobe Premiere Pro <span class="skill-level">●●●●</span></li>
+                    <li>Adobe Media Encoder <span class="skill-level">●●●</span></li>
+                    <li>Final Draft <span class="skill-level">●●●●</span></li>
+                    <li>Adobe Audition <span class="skill-level">●●●</span></li>
+                </ul>
+            </div>
+
+            <div class="honors">
+                <h2>Honors & Awards</h2>
+                <ul>
+                    <li>2001: National School of Drama Award</li>
+                    <li>2005: Young Institute Award</li>
+                </ul>
+            </div>
+
+            <div class="industry-focus">
+                <h2>Industry Focus</h2>
+                <ul>
+                    <li>Marathi Cinema</li>
+                    <li>Theater/Performing Art</li>
+                    <li>TV</li>
+                    <li>OTT</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
